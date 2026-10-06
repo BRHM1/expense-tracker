@@ -1,0 +1,2 @@
+# SQL scripts are for setup only; never serve them over HTTP.
+Require all denied

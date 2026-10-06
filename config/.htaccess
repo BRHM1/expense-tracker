@@ -1,0 +1,2 @@
+# Never serve configuration files (including .env) over HTTP.
+Require all denied

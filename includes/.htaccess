@@ -1,0 +1,2 @@
+# Include files are not meant to be requested directly.
+Require all denied

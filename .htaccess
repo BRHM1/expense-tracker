@@ -1,0 +1,10 @@
+# Used only if the vhost sets "AllowOverride All" (or at least AuthConfig, Limit, Options, Indexes).
+# The vhost example in deploy/ already contains the same rules, so this file is a fallback.
+
+Options -Indexes
+DirectoryIndex index.php
+
+# Block hidden files (.env, .git, .htaccess) and backups.
+<FilesMatch "^\.|\.(sql|ini|log|bak|example|md|conf)$">
+    Require all denied
+</FilesMatch>
